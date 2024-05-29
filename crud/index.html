@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>Inicio de Sesión</title>
+</head>
+<body>
+<header>       
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="/index.html">CRUD</a>
+        </div>
+      </nav>
+</header>
+<main class="main-content">
+    <div class="container">
+        <div class="columns is-centered">
+            <div class="column is-5">
+                <div class="box">
+                    <h1 class="title">Iniciar Sesión</h1>
+                    <form id="login-form">
+                        <div class="field">
+                            <label class="label">Correo Electrónico</label>
+                            <div class="control">
+                                <input class="input" type="email" name="email" placeholder="Ingresa tu correo">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Contraseña</label>
+                            <div class="control">
+                                <input class="input" type="password" name="password" placeholder="Ingresa tu contraseña">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control">
+                                <button class="button is-primary" type="submit">Iniciar Sesión</button>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <p class="has-text-centered">
+                                <a href="templates/form.html">Crear una cuenta</a> | <a href="#">Recuperar contraseña</a>
+                            </p>
+                        </div>
+                        <div class="field">
+                            <div class="buttons is-centered">
+                                <button class="button is-link">Iniciar sesión con Google</button>
+                                <button class="button is-info">Iniciar sesión con Facebook</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="controllers/login.js"></script>
+</body>
+</html>
+

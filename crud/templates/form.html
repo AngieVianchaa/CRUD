@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/main.css" />
+    <title>Registrar Nuevo Usuario</title>
+</head>
+<body>
+<header>       
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="../index.html">CRUD</a>
+        </div>
+      </nav>
+</header>
+<main class="main-content">
+    <div class="container">
+        <div class="columns is-centered">
+            <div class="column is-5">
+                <div class="box">
+                    <h1 class="title">Registrar Nuevo Usuario</h1>
+                    <form id="register-form">
+                        <div class="field">
+                            <label class="label">Nombre</label>
+                            <div class="control">
+                                <input class="input" type="text" name="nombre" placeholder="Ingresa tu nombre">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Primer Apellido</label>
+                            <div class="control">
+                                <input class="input" type="text" name="apePat" placeholder="Ingresa tu primer apellido">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Segundo Apellido</label>
+                            <div class="control">
+                                <input class="input" type="text" name="apeMat" placeholder="Ingresa tu segundo apellido">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Teléfono</label>
+                            <div class="control">
+                                <input class="input" type="tel" name="cel" placeholder="+52 1231231231">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Correo Electrónico</label>
+                            <div class="control">
+                                <input class="input" type="email" name="email" placeholder="user@gmail.com">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control">
+                                <button class="button is-success" type="submit">Registrar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="../controllers/app.js"></script>
+</body>
+</html>
